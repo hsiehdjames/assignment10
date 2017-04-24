@@ -18,7 +18,7 @@ var server = http.createServer(function(req, res) {
             handleError(err, res);
             return;
         } else {
-            res.setHeader("Content-Type", mime.lookup(filePath)); //Solution!
+            res.setHeader('Content-Type', mime.lookup(filePath));
             res.end(data);
         }
     });
